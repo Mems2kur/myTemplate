@@ -1,0 +1,727 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: white;
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+header .header-outer {
+  height: 100vh;
+  color: white;
+}
+header .header-outer .container {
+  max-width: 1100px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header .header-outer img {
+  width: 70px;
+  height: 70px;
+}
+header .header-outer .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-outer ul {
+  display: flex;
+  text-align: center;
+}
+header .header-outer li {
+  padding: 1rem;
+  text-align: center;
+}
+header .header-outer li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: solid transparent 3px;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+header .header-outer li a:hover {
+  border-bottom: 3px solid white;
+  transition: all 0.5s;
+}
+header .header-outer li .current {
+  border-bottom: 3px solid #ffbc00;
+}
+header .header-outer li .current:hover {
+  border-bottom: 3px solid #ffbc00;
+}
+header .header-outer section .bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20%;
+}
+header .header-outer section .bio h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+header .header-outer section .bio p {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+header .header-outer section .bio a {
+  color: black;
+  background: white;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 10px;
+  font-weight: 300;
+}
+header .header-outer section .bio a:hover {
+  background: #ffbc00;
+  transition: ease-in-out 0.5s;
+}
+header .header-outer section .bio a .btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+header .header-inner {
+  height: 300px;
+  background: url("/img/showcase.jpg ") no-repeat 20% 30%/cover;
+  height: 14vh;
+  color: white;
+  border-bottom: 3px solid #ffbc00;
+}
+header .header-inner .container {
+  max-width: 1100px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header .header-inner img {
+  width: 70px;
+  height: 70px;
+}
+header .header-inner .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-inner ul {
+  display: flex;
+  text-align: center;
+}
+header .header-inner li {
+  padding: 1rem;
+  text-align: center;
+}
+header .header-inner li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: solid transparent 3px;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+header .header-inner li a:hover {
+  border-bottom: 3px solid white;
+  transition: all 0.5s;
+}
+header .header-inner li .current {
+  border-bottom: 3px solid #ffbc00;
+}
+header .header-inner li .current:hover {
+  border-bottom: 3px solid #ffbc00;
+}
+
+section .specail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+section .specail h1 {
+  font-size: 2rem;
+}
+section .specail p {
+  font-size: 1.2rem;
+}
+section .specail div {
+  width: 60px;
+  background: #ffbc00;
+  height: 3px;
+}
+section .divis {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 1.5rem;
+  align-items: center;
+}
+section .divis .grids {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+section .divis .grids i {
+  padding: 0.7rem;
+  color: #ffbc00;
+}
+section .divis .grids h1 {
+  font-size: 1.2rem;
+}
+section .awards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+section .awards .award1 {
+  text-align: center;
+  height: 220px;
+  padding: 1rem;
+}
+section .awards .award1 i {
+  padding: 1rem;
+}
+section .awards .award1:nth-child(even) {
+  background-color: #ccc;
+}
+section .awards .award1:nth-child(odd) {
+  background-color: #eedfdf;
+}
+section .process {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+section .process h3 {
+  padding-top: 1rem;
+}
+section .process-step {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-size: 28px;
+  background: #ffbc00;
+  border-radius: 50%;
+  height: 10px;
+  width: 15px;
+  line-height: 15px;
+  padding: 1.3rem;
+  transition: all 1s;
+}
+section .process-icon {
+  border-radius: 50%;
+  background: black;
+  color: white;
+  text-align: center;
+  height: 110px;
+  width: 110px;
+  padding: 1rem 0.2rem 1rem 0.2rem;
+  line-height: 70px;
+  position: relative;
+  transform: all 1s;
+}
+section .process-icon:hover {
+  background: #ffbc00;
+  color: white;
+  width: 140px;
+  height: 140px;
+  line-height: 90px;
+  transition: 1s ease-in-out;
+}
+section .process-icon:hover .process-step {
+  background: black;
+}
+section ul i {
+  padding: 0.5rem;
+  background: black;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  border: white 2px solid;
+  margin-right: 20px;
+}
+section ul i:hover {
+  background: #ffbc00;
+  transition: all 0.5s;
+}
+section .about {
+  display: grid;
+  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
+  grid-gap: 1.2rem;
+  padding: 2rem;
+}
+section .about .bio-image {
+  grid-area: bioimage;
+}
+section .about .bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 0.8rem;
+  text-align: center;
+}
+section .about .award-2 {
+  grid-area: aw1;
+  padding: 2rem;
+  text-align: center;
+}
+section .about .award-3 {
+  grid-area: aw2;
+  padding: 2rem;
+  text-align: center;
+}
+section .about .award-4 {
+  grid-area: aw3;
+  padding: 2rem;
+  text-align: center;
+}
+section .about .award-2 .fas,
+section .about .award-3 .fas,
+section .about .award-4 .fas {
+  color: #ffbc00;
+  margin: 1rem;
+}
+section .skills {
+  background: black;
+  color: white;
+}
+section .skills .tech-skils .rating .rating-1 {
+  width: 800px;
+  height: 100px;
+  background: #ffbc00;
+  border-radius: 5px;
+}
+
+.line {
+  width: 3rem;
+  height: 3px;
+  background-color: #ffbc00;
+}
+
+.lines {
+  width: 1280px;
+  height: 3px;
+  background-color: #ffbc00;
+}
+
+.skills {
+  background: black;
+  color: white;
+}
+.skills .tech-skils .rating {
+  padding: 0.4rem 2rem;
+}
+.skills .tech-skils .rating .rating-1 {
+  max-width: 1250px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.skills .tech-skils .rating .rating-1 .rating-inner1 {
+  max-width: 1250px;
+  height: 20px;
+  background: #ffbc00;
+  border-radius: 5px;
+}
+.skills .tech-skils .rating .rating-1 .rating-inner2 {
+  max-width: 1000px;
+  height: 20px;
+  background: #ffbc00;
+  border-radius: 5px;
+}
+.skills .tech-skils .rating .rating-1 .rating-inner3 {
+  max-width: 950px;
+  height: 20px;
+  background: #ffbc00;
+  border-radius: 5px;
+}
+.skills .tech-skils .rating .rating-1 .rating-inner4 {
+  max-width: 1250px;
+  height: 20px;
+  background: #ffbc00;
+  border-radius: 5px;
+}
+.skills .tech-skils .rating .rating-1 .rating-inner5 {
+  max-width: 100px;
+  height: 20px;
+  background: #ffbc00;
+  border-radius: 5px;
+}
+.skills .tech-skils .rating .rating-1 .rating-inner6 {
+  max-width: 130px;
+  height: 20px;
+  background: #ffbc00;
+  border-radius: 5px;
+}
+
+section .about-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 4rem;
+}
+section .about-logos img {
+  width: 70%;
+}
+section .testimonials .contents {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+section .testimonials .contents .content-t {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+section .testimonials .profiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+section .testimonials .profiles .profs {
+  padding: 1rem 0;
+}
+section .testimonials .profiles .profs img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.footer-main {
+  background-color: black;
+  color: white;
+  height: 6rem;
+}
+.footer-main .footer-mains {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+.footer-main .footer-mains ul {
+  align-items: center;
+}
+.footer-main .footer-mains ul i {
+  padding: 0.5rem;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0 5px 10px 0 rgb(0, 0, 0);
+  margin-bottom: 1rem;
+}
+.items .item {
+  position: relative;
+  background: #ffbc00;
+  overflow: hidden;
+}
+.items .item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: inherit;
+  top: 0;
+  opacity: 0.8;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+  transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+.items .item:hover:after {
+  transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+}
+.items .item:hover .item-image {
+  transform: scale(1.2);
+}
+.items .item:hover .item-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+.items .item .item-image {
+  height: auto;
+  display: block;
+  transform: translateZ(0);
+  transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+.items .item .item-image img {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.items .item-image::before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+  overflow: hidden;
+}
+.items .item .item-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  transform: translateY(-20%);
+  transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+  transition: delay 0.5s;
+}
+.items .item .item-text-wrap {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.items .item .item-text-title {
+  font-size: 2rem;
+  padding: 0 1rem;
+  margin-top: 5px;
+}
+.items .item .item-text-category {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  margin: 0;
+}
+
+form .info {
+  display: grid;
+  grid-template-areas: "name email" "Subject number" "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+form .info .name-input {
+  grid-area: name;
+}
+form .info .email-input {
+  grid-area: email;
+}
+form .info .subject-input {
+  grid-area: Subject;
+}
+form .info .number-input {
+  grid-area: number;
+}
+form .info .message-input {
+  grid-area: message;
+  height: 100px;
+}
+form .info .text-input {
+  padding: 0.5rem 1rem;
+}
+
+section button {
+  margin: 0 auto;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.btn-dark, .btn-light, .btn-main {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main {
+  color: #333;
+  background-color: #ffbc00;
+}
+.btn-light {
+  color: #333;
+  background-color: white;
+}
+.btn-dark {
+  color: #f4f4f4;
+  background-color: black;
+}
+
+.contact {
+  background: #333;
+  color: white;
+}
+.contact .calls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.beging {
+  background: #ffbc00;
+  font-size: 2rem;
+  text-align: center;
+  height: 150px;
+  padding: 2.3rem;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  header .header-outer {
+    height: 30rem;
+    background-color: black;
+  }
+  header .bio {
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  header .header-outer {
+    height: 9rem;
+    background-position: 20% 30%;
+    border-bottom: 3px solid #ffbc00;
+  }
+  header .header-outer .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  header .header-outer section .bio {
+    display: none;
+  }
+  header .header-inner {
+    height: 9rem;
+    background-position: 20% 30%;
+    border-bottom: 3px solid #ffbc00;
+  }
+  header .header-inner .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  header .header-inner section .bio {
+    display: none;
+  }
+  .body {
+    height: 200px;
+  }
+  .specail h1 {
+    padding-bottom: 1rem;
+  }
+  .specail p {
+    padding-top: 0.5rem;
+  }
+  section .divis, section .awards, section .process {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 1rem;
+  }
+  .footer-main {
+    height: 10rem;
+  }
+  .footer-main .footer-mains {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 8rem;
+  }
+  .footer-main .footer-mains p {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  .footer-main .footer-mains i {
+    margin-bottom: 2rem;
+  }
+  section .about {
+    display: grid;
+    grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3";
+    grid-gap: 1.2rem;
+    padding: 2rem;
+  }
+  section .about .bio-image {
+    grid-area: bioimage;
+  }
+  section .about .bio {
+    grid-area: bio;
+  }
+  section .testimonials .contents {
+    grid-template-columns: 1fr;
+  }
+  section .testimonials .profiles {
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0 auto;
+  }
+  section .about-logos {
+    display: none;
+  }
+  section .items {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+  }
+  .information .info {
+    grid-template-areas: "name" "Subject" "email" "number" "message";
+  }
+  .contact .calls {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contact .calls div {
+    border-bottom: 1px solid gray;
+    padding: 1rem;
+  }
+  .beging h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@media (max-height: 900px) {
+  .header-inner {
+    height: 100px;
+  }
+}
